@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<div id="message"></div>
+
+  <script type="text/javascript">
+// var fund = +prompt ("Введите сумму депозита");
+// window.message.innerHTML += "При вложении " + fund + " долларов" + "<br/>";
+// var years = 0;
+// while (fund < 1000000) {
+//   years++;
+//   fund += fund * 0.1;
+//
+// }
+// //  alert("Вы будете миллионером через " + years + " лет");
+//   window.message.innerHTML += "Вы будете миллионером через " + years + " лет" + "<br/>";
+// x1 = Math.random();
+// console.log(x1);
+// do {
+//   x2 = Math.random();
+// } while (x1 == x2);
+
+// for (var i = 0; i < 10; i++) {
+//   console.log(i);
+// }
+
+// fund = +prompt("Сумма кредита");
+// creditBody = fund = 0.2 * fund;
+// montlyPayment = creditBody / 12;
+// for (var i = 1; i < 13; i++) {
+//   console.log("месяц № " + i + " Оплата - " + montlyPayment);
+// }
+// перебор индекса массива
+// arr = [12, 25, 36, 58, 68]
+// for (i in arr) {
+//   console.log(i);
+// }
+// // перебор индекса массива
+// arr = [12, 25, 36, 58, 68]
+// for (i in arr) {
+//   console.log(i);
+// }
+
+// for( i = 0; i < 10; i++)
+// {
+//   rnd = Math.round(Math.random()*6)+1; // генерация числа. 6 - генерация до этого. +1 - начиная от э
+//   if (rnd == 4) {
+//     break;
+//   }
+//   console.log(rnd);
+// }
+
+// i = 0;
+// while (i>10) {
+//    rnd = Math.round(Math.random()*6)+1;
+//    if (rnd == 4) {
+//      continue;
+//    }
+//    console.log(rnd);
+//    i++;
+// }
+// var limit = 3;
+// var number, i = 0;
+// while (i<limit) {
+//   number = +prompt("ВВедите число")
+//   console.log(number);
+//   i++;
+// }
+
+//Практика 9
+// var txt;
+// do {
+//   txt = prompt("Введи 'Да' или 'Нет'");
+// } while (txt!= "да" && txt!= "нет");
+
+fund = +prompt("Введите сумму кредита");
+months = +prompt("Введите срок в месяцах");
+creditBody = fund + 0.2 * fund * months / 12;
+montlyPayment = creditBody / months;
+for(i=1; i<=months;i++){
+  console.log("Месяц № " + i + " оплата " + montlyPayment);
+}
+
+  </script>
+</body>
+</html>

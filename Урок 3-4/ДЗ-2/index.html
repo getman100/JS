@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <script type="text/javascript">
+    //Задание 1
+  // let age = +prompt("Сколько Вам лет")
+  // if (age >= 0 && age <= 2)
+  // {
+  //   alert("Младенец");
+  // }
+  // else if (age >= 3 && age <= 11) {
+  //     alert("Ребенок");
+  // }
+  // else if (age >= 12 && age <= 18) {
+  //   alert("Подросток");
+  // }
+  // else if (age >= 19 && age <= 59) {
+  //   alert("Подросток");
+  // }
+  // else {
+  //   alert("Пенсионер")
+  // }
+
+  //Задание 2
+
+  // let number = +prompt("Введите число от 0 до 9")
+  // switch (number) {
+  //   case 1:alert("!")
+  //     break;
+  //   case 2:alert("@")
+  //     break;
+  //   case 3:alert("#")
+  //     break;
+  //   case 4:alert("$")
+  //     break;
+  //   case 5:alert("%")
+  //     break;
+  //   case 6:alert("^")
+  //     break;
+  //   case 7:alert("&")
+  //     break;
+  //   case 8:alert("*")
+  //     break;
+  //   case 9:alert("(")
+  //     break;
+  //   default:
+  //     alert("Вы ввели недопустимый символ или число")
+  // }
+
+  //Задание 3
+
+  // let number = prompt("Введите число от 100 до 999");
+  // if (number >= 100 && number <= 999)
+  //  {
+  //     if (number[0] == number[1] && number[0] == number[2])
+  //     {
+  //       alert("Все числа одинаковые");
+  //     }
+  //     else
+  //     {
+  //       alert("не все числа одинаковые");
+  //     }
+  //  }
+  //    else
+  //     {
+  //     alert("Выход за границы");
+  //     }
+
+  //Задание 4
+
+  // let year = +prompt("Введите год");
+  //
+  // if (year%400 == 0 || (year % 4 == 0 && year % 100 != 0))
+  // {
+  //   alert("Год Высокосный");
+  // }
+  // else
+  // {
+  //   alert("Год не высокосный");
+  // }
+ // Задание 5
+//   let usd = +prompt("Введите сумму в долларах");
+//   let euro = 0.82;
+//   let rubble = 73.51;
+//   let pound = 0.70
+//   let currency = +prompt("конвертируем в Евро = 1, Рубли = 2, Фунты = 3");
+// if (currency > 0 ) {
+//   switch (currency) {
+//     case 1: alert(usd * euro + " евро");
+//       break;
+//     case 2: alert(usd * rubble + " руб.");
+//       break;
+//     case 3: alert(usd * pound + " фунт.");
+//       break;
+//   }
+// } else {
+//   alert("некоректные данные")
+// }
+//Задание 6
+// let totalAmount = +prompt("Введите сумму покупки");
+// if (isNaN(totalAmount)) {
+//   alert("Некоректные данные")
+// }else {
+//   if (totalAmount >= 200 & totalAmount < 300) {
+//     totalAmount = totalAmount - (totalAmount /100 * 3);
+//     alert("Ваша сумма со скидкой = " + totalAmount);
+//   }
+//   else if (totalAmount >= 300 & totalAmount < 500) {
+//     totalAmount = totalAmount - (totalAmount /100 * 5);
+//     alert("Ваша сумма со скидкой = " + totalAmount);
+//   }
+//   else if (totalAmount >= 500) {
+//     totalAmount = totalAmount - (totalAmount /100 * 7);
+//     alert("Ваша сумма со скидкой = " + totalAmount);
+//   }
+//   else {
+//     alert("У вас нет сегодня скидки и сумма = " + totalAmount);
+//   }
+// }
+//Задание 7
+// let points = 0;
+// let answer_1 = +prompt("Сколько будет 2+2? Ответ 1 = 5, Ответ 2 = 4, Ответ 3 = 6")
+// switch (answer_1) {
+//   case 2: points = points + 2;
+//     break;
+//   default:
+//     points = points;
+// }
+// let answer_2 = +prompt("Сколько сторон света? Ответ 1 = 1, Ответ 2 = 4, Ответ 3 = 3")
+// switch (answer_2) {
+//   case 2: points = points + 2;
+//     break;
+//   default:
+//     points = points;
+// }
+// let answer_3 = +prompt("Сколько времен года? Ответ 1 = 5, Ответ 2 = 4, Ответ 3 = 3")
+// switch (answer_2) {
+//   case 2: points = points + 2;
+//     break;
+//   default:
+//     points = points;
+// }
+// alert("Вы набрали " + points + " очков")
+
+//Задание 8
+// let result;
+// let x = +prompt("Введите Х");
+// let y = +prompt("Введите Y");
+// alert( result = (x > y) ? x : y);
+
+// Задание калькулятор
+
+// let x = +prompt("первое число");
+// if (isNaN(x))
+//  {
+//   alert("Некоректные данные")
+// }
+// else {
+//   let y = +prompt("второе число");
+//   if (isNaN(y))
+//    {
+//     alert("Некоректные данные")
+//   }
+//   else {
+//     let sign = prompt("Введите знак арифметический знак + - * / ")
+//     if (sign == "+" || sign == "-" || sign == "/" || sign == "*") {
+//       switch (sign) {
+//         case "+": alert( x + y );
+//           break;
+//         case "-": alert( x - y );
+//           break;
+//         case "/": alert ((y == 0) ? "На ноль делить нельзя": x / y );
+//             break;
+//         case "*": alert( x * y );
+//             break;
+//         default:
+//       }
+//     }
+//   }
+// }
+
+
+
+  </script>
+</body>
+</html>

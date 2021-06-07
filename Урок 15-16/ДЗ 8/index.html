@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+<script type="text/javascript">
+// Задание 1
+//   class Animal {
+//     constructor(classAnimal) {
+//       this.classAnimal = classAnimal;
+//     }
+//     showClass(){
+//       document.write("Класс - " + this.classAnimal);
+//     }
+//   }
+// class Dog extends Animal {
+//   constructor(classAnimal, name, age) {
+//     super(classAnimal);
+//     this.name = name;
+//     this.age = age;
+//   }
+//   showAnimal(){
+//       return this.showClass() + document.write(", имя - " + this.name + ", Возраст - " + this.age);
+//   }
+// }
+//
+// class Cat extends Dog {
+//   constructor(classAnimal, name, age, eye) {
+//     super(classAnimal, name, age);
+//     this.eyeColor = eye;
+//   }
+//   showAnimalCat(){
+//       return  this.showAnimal() + document.write(", Цвет глаз - " + this.eyeColor);
+//   }
+// }
+// //myAnimal = new Animal("животное");
+// //console.log(myAnimal.showClass());
+// // myDog = new Dog("Животное","Mailo", 2);
+// // myDog.showAnimal();
+// myCat = new Cat("Животное","Kitty", 2, "голубой");
+// myCat.showAnimalCat();
+
+//Задание 2
+// var currentTime = new Date();
+// class User {
+//   constructor(name, surname) {
+//     this.name = name;
+//     this.surname = surname;
+//   }
+//   getFullName(){
+//     return document.write("Имя - " + this.name + ", Фамилия - " + this.surname);
+//   }
+// }
+// class Student extends User {
+//
+//   constructor(name, surname, year) {
+//     super(name, surname);
+//     this.startYear = year;
+//   }
+//   getCourse (){
+//     var course = currentTime.getFullYear() - this.startYear;
+//
+//   return document.write((course<5)? " Студент на " + course + " курсе": "Студент не может так долго учиться");
+//   }
+// }
+//
+// studentShag = new Student("Sergey", "Dyachenko", 2019);
+// studentShag.getFullName();
+// studentShag.getCourse();
+
+//Задание 3
+
+// class MyString {
+//   constructor() {
+//   }
+//  reverse(str){
+//    return str.split("").reverse().join("");
+//  }
+
+//  ucFirst(str) {
+//    if (!str)
+//      return str;
+//      var newStr = str.toLowerCase();
+//      return newStr[0].toUpperCase() + str.slice(1);
+//  }
+//
+//  ucWords(str){
+//    if (!str)
+//      return str;
+//      var newStr = str.toLowerCase();
+//      newStr = newStr.split(" ")
+// for (var i = 0; i < newStr.length; i++) {
+//   var tempStr = newStr[i];
+//   tempStr = tempStr[0].toUpperCase() + tempStr.slice(1);
+//   newStr[i] = tempStr;
+//
+// }
+// return newStr.join(" ");
+//  }
+// }
+// str = new MyString;
+// console.log(str.reverse("abcdef"));
+// console.log(str.ucFirst("abcdef"));
+// console.log(str.ucWords("abcdFef Gbcd abcd"));
+
+
+
+</script>
+</body>
+</html>

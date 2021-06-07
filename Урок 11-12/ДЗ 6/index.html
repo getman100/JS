@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <script type="text/javascript">
+
+//задание 1
+// calcDate(1,1,2021);
+// function calcDate( day, month, year){
+//   var dateNow = new Date(year, month-1, day)
+//   console.log("выбранная дата = " + dateNow);
+//    dateNow.setDate(dateNow.getDate() + 1);
+//   console.log("следующий день = " + dateNow.getDate());
+//   dateNow.setDate(dateNow.getDate() - 2);
+//   console.log("предыдущий день недели = " + dateNow.getDay());
+// }
+
+//задание 2
+
+
+// function setTime(timestamp){
+//   var days = Math.floor(timestamp / (3600*24));
+//
+//   var hours = Math.floor(timestamp % (3600*24) / 3600);
+//
+//   var minutes = Math.floor(timestamp % 3600 / 60);
+//
+//   var seconds = Math.floor(timestamp % 60);
+//
+//   var formated = days + 'д :' + hours + 'ч :' + minutes + 'м :' + seconds + 'с';
+//   return formated;
+// }
+// console.log(setTime(3600));
+
+// Задание 3
+
+// var arr = [11, 21, 1, 33, 3, 44];
+// printPrice (arr);
+// function printPrice (arr){
+//   //3.1
+// if (confirm("распечатать?")) {
+//   document.write(arr + "</br>");
+// } else {
+//
+// }
+// //3.2
+// total = 0;
+// for (var i = 0; i < arr.length; i++) {
+//   total += arr[i] ;
+// }
+// document.write("Общая сумма = " + total + "</br>");
+// }
+// //3.3
+// document.write("Макс число = " + Math.max.apply(null,arr) + "</br>");
+// //3.4
+// document.write("среднее арифметическое  = " + Math.floor(total/arr.length) + "</br>");
+//
+
+// Задание 4
+
+// var arr = ["Blue", "Red"];
+//
+// function subChars(arr){
+//   arr.push("Black");
+//   arr[arr.length-2] = "Yellow";
+//   return arr;
+// }
+//
+// document.write(subChars(arr));
+
+
+//Задание 5
+
+// function flipCase(str) {
+//   var chars = str.toUpperCase().split("");
+//   for (var i = 0; i < chars.length; i++) {
+//     if (chars[i] == str[i])
+//       chars[i] = chars[i].toLowerCase();
+//       if (chars[i] == "1" || chars[i] == "2" || chars[i] == "3" || chars[i] == "4"|| chars[i] == "5"
+//        || chars[i] == "6"|| chars[i] == "7"|| chars[i] == "8"|| chars[i] == "9"|| chars[i] == "0" )
+//         chars[i] = "_";
+//   }
+//   return chars.join("");
+// }
+//
+// var letters = "This iS 123 a TeSt sTring";
+// var result = flipCase(letters);
+// console.log(letters);
+// console.log(result);
+
+//Задание 6
+
+// var days = ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'];
+//
+// function dayNumber(number, days){
+//   if (number>=0 && number < 7) {
+//     for (var i = 0; i < days.length; i++) {
+//        if (i == number) return days[i];
+//     }
+//   }  return "неверное число";
+// }
+// var number = prompt("введите число от 0 до 6");
+//
+// console.log(dayNumber(number,days));
+
+
+// Задание 1*
+// calcDate(31,5,2021);
+//
+// function calcDate( day, month, year){
+//   var dateNow = new Date(year, month-1, day)
+//   console.log((dateNow.getDay() == 6 || dateNow.getDay() == 0)? "Это выходной":"Это рабочий");
+// }
+
+//Задание 2*
+// var arr = [11, 21, 1, 33, 3, 44, 1, 21];
+//
+// function get_uniq_arr(arr){
+//   let result = [];
+//   for (let str of arr) {
+//     if (!result.includes(str)) {
+//       result.push(str);
+//     }
+//   }
+//   return result;
+// }
+//
+// alert(get_uniq_arr(arr));
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <script type="text/javascript">
+  //пример 1
+  // setInterval(
+  //   function(){
+  //     alert("Boom!");
+  //   },
+  //   2000);
+
+  //пример 2
+
+  // var id = setInterval(IntervalFunc,2000);
+  // var counter = 0;
+  //
+  // function IntervalFunc(){
+  //  if(counter == 3){
+  //    clearInterval(id);
+  //    return;
+  //  }
+  //  counter++;
+  //  alert("Boom");
+  // }
+
+  //пример 3 - рекурсивное использование функции setTimeout с разной задержкой
+
+  var id = setTimeout(TimeOutFunc, 2000);
+  var counter = 1;
+  function TimeOutFunc() {
+     alert("Boom Timer");
+     switch(counter){
+       case 1:
+           id = setTimeout(TimeOutFunc, 5000);
+         break;
+       case 2:
+           id = setTimeout(TimeOutFunc, 10000);
+         break;
+       case 3:
+           clearTimeout(id);
+         return;
+     }
+     counter++;
+  }
+  </script>
+</body>
+</html>

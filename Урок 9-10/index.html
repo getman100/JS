@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <script type="text/javascript">
+
+//    setTimeout ("alert ('hi')", 1000);
+
+
+      // setTimeout (function(){
+      //   alert ('hi');
+      // }, 1000);
+
+
+
+// function helloWorld (){
+//   alert ('hi');
+// }
+// setTimeout(helloWorld, 2000);
+
+
+
+// function sum (a,b){
+//   alert(a+b);
+// }
+// setTimeout(sum, 2000, 5, 9);
+
+
+// function sum (a,b){
+//   alert(a+b);
+// }
+// var1 = setTimeout(sum, 2000, 5, 9);
+// console.log(var1);
+
+// var str = "test no test yes test test";
+// var counter = 0;
+// var wordToFind = "test";
+// var index = str.indexOf(wordToFind);
+// while (index != -1) {
+//   counter++;
+//   index = str.indexOf(wordToFind, index + 1);
+// }
+// console.log(counter);
+
+// var town = "Краматорск";
+// var finTown = town.toLowerCase();
+// var finTown_arr = finTown.split("");
+// counter = 0;
+// console.log(finTown_arr);
+// for(i=0; i < finTown_arr.length; i++){
+//   if (finTown_arr[i] == "а") {
+//     counter ++;
+//   }
+// }
+// console.log(counter);
+
+//Объекты
+var student = new Object();
+student["Name"] = "Вася";
+student["Age"] = 23;
+//console.log(student["Name"]);
+
+for (var property in student){
+
+  console.log("ключ - " + property);
+  console.log("значение - " + student[property]);
+
+}
+
+// var firm = {};
+// firm.Name = "Star";
+// firm.Adress = "Краматорск";
+// console.log(firm.Name);
+
+
+
+  </script>
+</body>
+</html>

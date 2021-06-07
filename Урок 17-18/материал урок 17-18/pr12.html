@@ -1,0 +1,27 @@
+<!doctype html />
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Keyboard events</title>
+  <style>
+    img {
+        height: auto;
+        width:  200px;
+      }
+  </style>
+</head>
+<body>
+  <img src="step.jpg"
+  	 onload="addMessage('step.jpg load OK')"
+  	 onerror="addMessage('step.jpg load error')"/>
+  <img src="step2.jpg"
+  	 onload="addMessage('step2.jpg load OK')"
+  	 onerror="addMessage('step2.jpg load error')"/>
+  <p id="txt"></p>
+  <script>
+  	function addMessage(msg) {
+  	  window.txt.innerHTML += msg + "<br/>"
+  	}
+  </script>
+</body>
+</html>

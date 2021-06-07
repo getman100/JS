@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <script type="text/javascript">
+
+//Задание 1
+//     function compare(x,y){
+//       if (x<y) {
+//         return -1;
+//       } else if (x>y) {
+//         return 1;
+//       } else {
+//         return 0;
+//       }
+//     }
+// var check = compare(3,3);
+//console.log(check);
+
+//Задание 2
+
+// function factorial(n) {
+//   return (n != 1) ? n * factorial(n - 1) : 1;
+// }
+//
+// alert( factorial(5) ); // 120
+
+//Задание 3
+
+// function connect (a,b,c){
+//   return a + "" + b + "" + c;
+// }
+//  var u = +connect(2,3,4);
+//
+// console.log(u);
+
+//Задание 4
+
+// function clock (a,b,c){
+//   if (b == undefined) {
+//     b = "00";
+//   }
+//   if (c == undefined) {
+//     c = "00";
+//   }
+//
+//   return a + ":" + b + ":" + c;
+// }
+//
+// clockNow = clock(12)
+// document.write("<h2>" + clockNow + "</h2>");
+
+//Задание 5
+
+// var timestamp = 123456;
+//
+// var days = Math.floor(timestamp / (3600*24));
+//
+// var hours = Math.floor(timestamp % (3600*24) / 3600);
+//
+// var minutes = Math.floor(timestamp % 3600 / 60);
+//
+// var seconds = Math.floor(timestamp % 60);
+//
+// var formated = days + 'д :' + hours + 'ч :' + minutes + 'м :' + seconds + 'с';
+// document.write("<h2>" + formated + "</h2>");
+
+//Задание 6
+
+// function pow(x, n) {
+//
+//   return (n != 1) ? x*pow(x, n-1) : x;
+// }
+//
+// alert( pow(2, 3) ); // 8
+
+//Задание 7
+
+// var k = 0;
+// var x = +prompt("Введите число");
+// checkNumber(x);
+// function checkNumber (x){
+//   for (var i = 2; i <= x; i++)
+//   {
+//     if (x % i == 0 && x / 1)
+//     {
+//       k++;
+//     }
+//   }
+//   if (k==1) {
+//     return alert("Число простое");
+//   }
+//   else
+//   {
+//     return alert("Число составное");
+//   }
+// }
+
+//Задание 8
+
+//     function createHeaders(n){
+//       for (i = 1; i<=n; i++) {
+//         document.write("<h2> Header " + i + "</h2> </<br>");
+//       }
+//     }
+// createHeaders(9);
+
+//Задание 9
+
+// function dayOrder (day){
+//   switch (day) {
+//     case 1: return "Monday";
+//       break;
+//     case 2: return "Tuesday";
+//       break;
+//     case 3: return "Wednesday";
+//       break;
+//     case 4: return "Thursday";
+//       break;
+//     case 5: return "Friday";
+//       break;
+//     case 6: return "Saturday";
+//       break;
+//     case 7: return "Sunday";
+//       break;
+//     default: return "Нет такого дня недели";
+//
+//   }
+// }
+// day = +prompt("Введите день недели")
+// result = dayOrder(day)
+// console.log(result);
+
+//Задание 1*
+
+firstTime = +prompt("Введите первые секунды");
+secondTime = +prompt("Введите вторые секунды");
+
+var resultTime = timeCalc(firstTime-secondTime);
+
+function timeCalc(timeStamp) {
+
+  var days = Math.floor(timeStamp / (3600*24));
+
+  var hours = Math.floor(timeStamp % (3600*24) / 3600);
+
+  var minutes = Math.floor(timeStamp % 3600 / 60);
+
+  var seconds = Math.floor(timeStamp % 60);
+
+  var formated = days + 'д :' + hours + 'ч :' + minutes + 'м :' + seconds + 'с';
+
+  return formated;
+}
+
+document.write("<h2>" + resultTime + "</h2>");
+
+  </script>
+</body>
+</html>

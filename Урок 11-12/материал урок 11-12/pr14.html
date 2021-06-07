@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+  //Создаём объект Date с текущей датой и временем
+  // var now = new Date();
+  // console.log(now);
+  // console.log("Дата в миллисекундах " + Date.now()); //дата в миллисекундах
+  // console.log("Дата " + now.getDate());//день месяца
+  // console.log("День недели " + now.getDay());//день недели (отсчет начинается с 0 - воскресенье, и последний день - 6 - суббота)
+  // console.log("Номер месяца " + now.getMonth());//номер месяца (отсчет начинается с нуля, то есть месяц с номер 0 - январь)
+  // console.log("Год " + now.getFullYear());//год
+  // console.log("Дата в виде строки " + now.toDateString());//полную дату в виде строки
+  // console.log("Часы " + now.getHours());//час (от 0 до 23)
+  // console.log("Минуты " + now.getMinutes());//минуты (от 0 до 59)
+  // console.log("Секунды " + now.getSeconds());//секунды (от 0 до 59)
+  // console.log("Время " + now.getTime());//секунды (от 0 до 59)
+  // console.log("Миллисекунды " + now.getMilliseconds());//миллисекунды (от 0 до 999)
+  // console.log("Время в виде строки " + now.toTimeString());//полное время в виде строки
+  //
+  // //Установка компонентов даты
+  // // setFullYear(year [, month, date])
+  // // setMonth(month [, date])
+  // // setDate(date)
+  // // setHours(hour [, min, sec, ms])
+  // // setMinutes(min [, sec, ms])
+  // // setSeconds(sec [, ms])
+  // // setMilliseconds(ms)
+  // // setTime(milliseconds) (устанавливает всю дату по миллисекундам с 01.01.1970 UTC)
+  // console.log("установка компонентов даты");
+  // var today = new Date;
+  //
+  // today.setHours(0);
+  // console.log(today); // сегодня, но час изменён на 0
+  //
+  // today.setHours(0, 0, 0, 0);
+  // console.log(today); // сегодня, ровно 00:00:00
+  //
+  //
+  // //автоисправление даты
+  // console.log("автоисправление даты");
+  // var myDate = new Date(2021, 0, 32); // 32 января 2021 ?!?
+  // console.log(myDate); // ... это 1 февраля 2021!
+  //
+  //
+  //прибавление даты
+  console.log("прибавление даты");
+  var myNewDate = new Date(2021, 1, 28);
+  console.log(myNewDate);
+  myNewDate.setDate(myNewDate.getDate() + 2);
+  console.log(myNewDate); // 2 марта, 2021
+  //
+  // //миллисекунды в дату
+  // console.log("миллисекунды в дату");
+  // curDate = Date.now();
+  // dateStr = new Date(curDate);
+  // dateFinal = dateStr.toString('yyyy MM dd');
+  // console.log(dateFinal);
+  //
+  //
+  // //разность дат
+  // console.log("разность дат");
+  // var start = new Date(2021, 1, 28);
+  // var end = new Date(2021, 2, 2);
+  // a = end-start;
+  // console.log(a); //результат в миллисекундах
+  // console.log(Math.ceil(a/(1000 * 60 * 60 * 24)));//количество миллисекунд в 1 дне. 1 день = 24 часа * 60 минут * 60 секунд * 1000 миллисекунд
+  //
+  //
+
+
+
+
+  </script>
+</body>
+</html>

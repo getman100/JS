@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+  // конструктор пользователя
+  //Определение конструктора User и к его прототипу добавляется свойство maxage​
+  function User (name, age) {
+      this.name = name;
+      this.age = age;
+      this.go = function(){
+        document.write(this.name + " идет <br/>");
+      };
+      this.displayInfo = function(){
+          document.write("Имя: " + this.name + "; возраст: " + this.age + "<br/>");
+      };
+  }
+  User.prototype.maxage = 110;
+
+  // конструктор работника
+  //Определение типа Employee​
+  function Employee(name, age, comp){
+    //Обращение к конструктору User
+      User.call(this, name, age);
+      this.company = comp;
+      //Переопределение метода displayInfo()
+      this.displayInfo = function(){
+          document.write("Имя: " + this.name + "; возраст: " + this.age + "; компания: " + this.company + "<br/>");
+      };
+  }
+  //Создание объекта прототипа User, который присваивается прототипу Employee.
+  //Наследуем также и прототип User​
+  Employee.prototype = Object.create(User.prototype);
+
+  var tom = new User("Том", 26);
+  var bill = new Employee("Билл", 32, "Google");
+  tom.go();
+  bill.go();
+  tom.displayInfo();
+  bill.displayInfo();
+  bill.maxage = 1;
+  console.log(bill.maxage);
+  console.log(tom.maxage);
+console.log(bill);
+
+  </script>
+</body>
+</html>

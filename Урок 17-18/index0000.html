@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style media="screen">
+  body{
+    height: 2000px;
+    position:relative;
+    margin: 0;
+
+  }
+    div{
+      background:#7be6ad;
+      height:50px;
+      width: 100px;
+      position: absolute;
+    }
+  </style>
+</head>
+<body onclick="moveStranger(event)">
+
+<div id="stranger"></div>
+
+  <script type="text/javascript">
+
+function moveStranger(e){
+  stranger.style.left = e.pageX + "px";
+  stranger.style.top = e.pageY + "px";
+}
+
+  </script>
+</body>
+</html>

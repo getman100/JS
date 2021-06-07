@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+
+
+  <script type="text/javascript">
+
+function User(pName, pAge){
+  this.name = pName;
+  this.age = pAge;
+
+  this.displayInfo = function(){
+    document.write("Name-" + this.name + " Age- " + this.age + "</br>")
+  };
+}
+var tom = new User("Tom", 25);
+console.log(tom.name);
+tom.displayInfo();
+
+function Car(mName, mYear){
+  this.name = mName;
+  this.year = mYear;
+
+  this.getCarInfo = function(){
+    document.write("Model-" + this.name + " Year - " + this.year + "</br>")
+  };
+}
+
+function User(pName, pAge){
+  this.name = pName;
+  this.age = pAge;
+
+  this.driveCar = function(car){
+    document.write(this.name + " drive car -  " + car.name + "</br>")
+  };
+
+  this.displayInfo = function(){
+    document.write("Name-" + this.name + " Age- " + this.age + "</br>")
+  };
+}
+var tom = new User("Tom", 25);
+tom.displayInfo();
+
+var bently = new Car("Bently", 2021);
+tom.driveCar(bently);
+
+class NewClass {
+  constructor(classPropOne, classPropTwo) {
+    this.classpropone = classPropOne;
+    this.classproptwo = classPropTwo;
+  }
+
+  someclassmethod() {
+    return this.classpropone;
+  }
+
+  anotherclassmethod() {
+    return this.classproptwo;
+  }
+}
+
+var obj = new NewClass("var1", "var2");
+console.log(obj);
+console.log(obj.classpropone);
+console.log(obj.someclassmethod());
+console.log(obj.someclassmethod);
+
+  </script>
+</body>
+</html>

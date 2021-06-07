@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+  //по умолчанию все свойства объектов являются публичными, общедоступными
+  // function User(pName, pAge) {
+  //     this.name = pName;
+  //     this.age = pAge;
+  //     this.displayInfo = function(){
+  //         document.write("Имя: " + this.name + "; возраст: " + this.age);
+  //     };
+  //   };
+  //   var tom = new User("Том", 26);
+  //   tom.name=34;
+  //   console.log(tom.name);
+
+
+
+
+
+    //использование инкапсуляции - скрываем свойства от доступа извне, сделав их локальными переменными
+
+    function User (name) {
+        this.name = name;
+        var _age = 1;
+        this.displayInfo = function(){
+            console.log("Имя: " + this.name + "; возраст: " + _age);
+        };
+        //геттер (getter)
+        this.getAge = function() {
+            return _age;
+        }
+        //сеттер (setter)
+        this.setAge = function(age) {
+            if(typeof age === "number" && age >0 && age<110){
+                _age = age;
+            } else {
+                console.log("Недопустимое значение");
+            }
+        }
+    }
+
+    var tom = new User("Том");
+    console.log(tom._age); // undefined - _age - локальная переменная
+    console.log(tom.getAge()); // 1
+    tom.setAge(32);
+    console.log(tom.getAge()); // 32
+    tom.setAge("54"); // Недопустимое значение
+    tom.setAge(123); // Недопустимое значение
+
+
+
+
+  </script>
+</body>
+</html>

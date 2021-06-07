@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<p id="demo"></p>
+
+<script type="text/javascript">
+
+
+// function Calculator(){
+//   this.read = function(){
+//     this.a = +prompt ("a?", 0);
+//     this.b = +prompt ("b?", 0);
+//   };
+//
+//   this.sum = function(){
+//     return this.a + this.b;
+//   };
+//
+//   this.mul = function(){
+//     return this.a * this.b;
+//   };
+// }
+//
+// let calc = new Calculator();
+// calc.read();
+// alert("Sum = " + calc.sum());
+// alert("Mul = " + calc.mul());
+
+// function Accumulator(startingValue){
+//   this.value = startingValue;
+//
+//   this.read = function(){
+//     this.value += +prompt("Value:", 0);
+//   };
+// }
+// let accum = new Accumulator(1);
+// accum.read();
+// alert(accum.value);
+
+// function Car (name, model, color){
+//   this.name = name;
+//   this.model = model;
+//   this.color = color;
+// }
+// var myCar = new Car;
+// myCar.name = "Skoda";
+// myCar.model = "Superb 2021";
+// myCar.color = "black";
+//
+// Car.prototype.owner = "Сергей";
+// Car.prototype.fullInfo = function(){
+//   return myCar.name + " " + myCar.model +  " " + myCar.owner;
+// }
+// alert(myCar.name + " " + myCar.model +  " " + myCar.owner);
+// alert(myCar.fullInfo());
+
+// function showBrowser(){
+//   document.write("Name = " + this.name + " " + this.version);
+// }
+//
+// function Browser(name, version) {
+//   this.name = name;
+//   this.version = version;
+//   this.aboutBrowser = showBrowser;
+// }
+//
+// var myBrowser = new Browser ("Chrome", 25.5);
+// //console.log(myBrowser);
+// myBrowser.aboutBrowser();
+
+// class Person {
+//   constructor(first, last, age, eye) {
+//     this.firstName = first;
+//     this.lastName = last;
+//     this.age = age;
+//     this.eyeColor = eye;
+//   }
+// }
+// Person.prototype.name = function(){
+//   return this.firstName + " " + this.lastName;
+// };
+//
+// var myFather = new Person("Jack", "Black", 50, "white");
+// document.getElementById("demo").innerHTML = "My father - " + myFather.name();
+
+class Car {
+  constructor(brand) {
+    this.carname = brand;
+  }
+
+  present(){
+    return "I have a " + this.carname;
+  }
+}
+
+class Model extends Car {
+  constructor(brand, model) {
+    super(brand);
+    this.model = model;
+  }
+  show(){
+    return this.present() + ", it is " + this.model;
+  }
+}
+
+myCar = new Model("Skoda", "Superb");
+document.getElementById("demo").innerHTML = myCar.show();
+
+
+</script>
+</body>
+</html>
